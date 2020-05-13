@@ -131,8 +131,8 @@ app.delete('/ruleta/:id', (req, res) => {
 });
 
 // Obtiene las ruletas
-app.get('/ruleta', (req, res) => {
-    Ruleta.findById({})
+app.get('/ruletas', (req, res) => {
+    Ruleta.find({})
         .exec((err, fields) => {
             if(err){ 
                 return res.status(400).json({
