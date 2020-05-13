@@ -1,0 +1,28 @@
+{
+  "name": "masivian-ruleta",
+  "version": "1.0.0",
+  "description": "Prueba técnica para Masivian",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hm1996/masivian-ruleta.git"
+  },
+  "keywords": [
+    "prueba"
+  ],
+  "author": "Humar Moreno B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hm1996/masivian-ruleta/issues"
+  },
+  "homepage": "https://github.com/hm1996/masivian-ruleta#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.13",
+    "underscore": "^1.10.2"
+  }
+}
