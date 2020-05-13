@@ -19,8 +19,12 @@ class Apuesta{
             return { validado: false, mensaje: 'El valor de la apuesta debe estar entre 0 y 10000' };
         }
 
-        if(this.color !== "negro" && this.color !== "rojo"){
+        if(this.color !== "negro" && this.color !== "rojo" && this.color !== "ninguno"){
             return { validado: false, mensaje: 'El color debe ser rojo o negro' };
+        }
+
+        if(this.numero === -1 && this.color === "ninguno"){
+            return { validado: false, mensaje: 'Apuesta invalida' };
         }
 
         return { validado: true, mensaje: '' };

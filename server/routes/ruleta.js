@@ -122,9 +122,18 @@ app.delete('/ruleta/:id', (req, res) => {
                 });
             }
 
+            let ruletaFiltrada =  {
+                "id": field._id,
+                "estado": field.estado,
+                "apuestas": field.apuestas,
+                "fechaCreacion": field.fechaCreacion,
+                "fechaApertura": field.fechaApertura,
+                "fechaClausura": field.fechaClausura
+            }
+
             return res.json({
                 status: true,
-                data: `La ruleta ${field._id} fue cerrada.`
+                data: ruletaFiltrada
             });
         }
     );
