@@ -23,6 +23,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.9.13",
-    "underscore": "^1.10.2"
+    "underscore": "^1.12.1"
   }
 }
